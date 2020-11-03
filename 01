@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+  float num1, num2, num3, result_first, result_second,result_third,a;
+
+  scanf("%f", &num1);
+
+  scanf("%f", &num2);
+
+  scanf("%f", &num3);
+
+  a=1+ ((num2/12) * 0.01) ;
+  
+  result_first = num1 *a - num3 ;
+
+  result_second =result_first *a - num3;
+  
+  result_third =result_second *a - num3;
+  
+  printf("Balance remaining after first payment: $%.2f\n", result_first);
+  
+  printf("Balance remaining after second payment: $%.2f\n", result_second);
+  
+  printf("Balance remaining after third payment: $%.2f\n", result_third);
+
+  return 0;
+}
